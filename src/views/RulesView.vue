@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <RouterLink to="/" class="btn btn-lg bg-secondary hover:bg-white group">
+  <RouterLink to="/" class="btn btn-lg group">
     <span
       class="text-white transition duration-300 ease-in-out group-hover:text-black"
       >Go back</span
@@ -14,3 +14,13 @@
   </RouterLink>
   <div>Those are the Rules</div>
 </template>
+
+<style scoped>
+.btn {
+  background-color: var(--color-secondary);
+}
+
+.btn:hover {
+  background-color: white;
+}
+</style>
