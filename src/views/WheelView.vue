@@ -82,7 +82,6 @@ const randomRule = () => {
     :middle-circle="hasMiddleCircle"
     :img-params="logo"
     :data="data"
-    width=""
     @done="done"
   />
 </template>
