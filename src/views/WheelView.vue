@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { RouterLink } from "vue-router";
 import { FortuneWheel } from "vue3-fortune-wheel";
 import type { Data, ImgParams } from "vue3-fortune-wheel";
 import logoImage from "@/assets/primary-logo.svg";
@@ -57,18 +56,27 @@ const done = (result: Data) => {
 const launchWheel = () => {
   wheel.value?.spin();
 };
+
+const randomRule = () => {
+  rule.value = Math.floor(Math.random() * data.value.length) + 1;
+  launchWheel();
+};
 </script>
 
 <template>
   <div class="flex justify-center gap-10 mt-10">
     <button
-      class="btn btn-lg bg-secondary text-white hover:bg-white hover:text-secondary"
-      @click="launchWheel"
+      class="btn btn-lg bg-secondary text-white hover:bg-white hover:text-black"
+      @click="randomRule"
     >
       Spin the wheel!
     </button>
-    <RouterLink to="/" class="btn btn-lg bg-secondary">
-      <img src="@/assets/go-back.svg" alt="Go back arrow" class="w-6 h-6" />
+    <RouterLink to="/" class="btn btn-lg bg-secondary hover:bg-white group">
+      <img
+        src="@/assets/go-back.svg"
+        alt="Go back arrow"
+        class="w-6 h-6 transition duration-300 ease-in-out group-hover:invert"
+      />
     </RouterLink>
   </div>
   <FortuneWheel
@@ -77,6 +85,7 @@ const launchWheel = () => {
     :middle-circle="hasMiddleCircle"
     :img-params="logo"
     :data="data"
+    width=""
     @done="done"
   />
 </template>
