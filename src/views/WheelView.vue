@@ -65,13 +65,10 @@ const randomRule = () => {
 
 <template>
   <div class="flex justify-center gap-10 mt-10">
-    <button
-      class="btn btn-lg bg-secondary text-white hover:bg-white hover:text-black"
-      @click="randomRule"
-    >
+    <button class="btn btn-lg text-white hover:text-black" @click="randomRule">
       Spin the wheel!
     </button>
-    <RouterLink to="/" class="btn btn-lg bg-secondary hover:bg-white group">
+    <RouterLink to="/" class="btn btn-lg group">
       <img
         src="@/assets/go-back.svg"
         alt="Go back arrow"
@@ -89,3 +86,13 @@ const randomRule = () => {
     @done="done"
   />
 </template>
+
+<style scoped>
+.btn {
+  background-color: var(--color-secondary);
+}
+
+.btn:hover {
+  background-color: white;
+}
+</style>

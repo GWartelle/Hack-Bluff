@@ -5,18 +5,26 @@ import { RouterLink } from "vue-router";
 <template>
   <div class="flex flex-col gap-20 mt-32">
     <RouterLink to="/wheel">
-      <button
-        class="btn btn-lg text-3xl w-60 h-24 bg-white text-secondary hover:bg-secondary hover:text-white border-none"
-      >
+      <button class="btn btn-lg text-3xl w-60 h-24 border-none">
         The Wheel
       </button>
     </RouterLink>
     <RouterLink to="/rules">
-      <button
-        class="btn btn-lg text-3xl w-60 h-24 bg-white text-secondary hover:bg-secondary hover:text-white border-none"
-      >
+      <button class="btn btn-lg text-3xl w-60 h-24 border-none">
         The Rules
       </button>
     </RouterLink>
   </div>
 </template>
+
+<style scoped>
+.btn {
+  color: var(--color-secondary);
+  background-color: white;
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--color-secondary);
+}
+</style>
