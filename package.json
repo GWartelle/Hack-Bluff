@@ -11,7 +11,7 @@
   "dependencies": {
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
-    "vue3-fortune-wheel": "^2.0.5"
+    "vue3-fortune-wheel": "file:vue3-fortune-wheel-2.0.5.tgz"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
