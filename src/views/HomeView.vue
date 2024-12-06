@@ -21,12 +21,12 @@
 
 <style scoped>
 .btn {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   background-color: white;
 }
 
 .btn:hover {
   color: white;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 </style>

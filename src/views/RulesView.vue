@@ -228,7 +228,7 @@
       </section>
 
       <!-- Conclusion -->
-      <section>
+      <section class="z-10">
         <h3 class="text-3xl font-semibold text-indigo-600 mb-5">
           Ending the Game
         </h3>
@@ -256,7 +256,7 @@
 
     <!-- Special Settings -->
     <section
-      class="flex flex-col md:flex-row gap-8 justify-between items-center"
+      class="flex flex-col z-10 md:flex-row gap-8 justify-between items-center"
     >
       <div
         class="bg-indigo-600 rounded-3xl flex flex-col text-center gap-2 py-2 px-5"
@@ -268,11 +268,7 @@
         </p>
       </div>
       <RouterLink to="/wheel">
-        <button
-          class="btn btn-lg text-2xl text-white hover:text-black border-none"
-        >
-          Wheel
-        </button>
+        <button class="wheel-btn btn btn-lg text-2xl border-none">Wheel</button>
       </RouterLink>
     </section>
 
@@ -287,7 +283,7 @@
   <!-- Back home button -->
   <RouterLink
     to="/"
-    class="btn btn-lg border-none fixed right-5 bottom-10 group"
+    class="back-btn btn btn-lg border-none fixed right-5 bottom-10 group"
   >
     <img
       src="@/assets/go-back.svg"
@@ -298,11 +294,21 @@
 </template>
 
 <style scoped>
-.btn {
+.wheel-btn {
+  color: var(--color-primary);
+  background-color: white;
+}
+
+.wheel-btn:hover {
+  color: white;
   background-color: var(--color-primary);
 }
 
-.btn:hover {
+.back-btn {
+  background-color: var(--color-primary);
+}
+
+.back-btn:hover {
   background-color: white;
 }
 </style>

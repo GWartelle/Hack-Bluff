@@ -69,10 +69,7 @@ const randomRule = () => {
 </script>
 
 <template>
-  <button
-    class="btn btn-lg mt-10 border-none text-white hover:text-black"
-    @click="randomRule"
-  >
+  <button class="spin-btn btn btn-lg mt-10 border-none" @click="randomRule">
     Spin the wheel!
   </button>
   <FortuneWheel
@@ -87,7 +84,7 @@ const randomRule = () => {
   <!-- Back home button -->
   <RouterLink
     to="/"
-    class="btn btn-lg border-none fixed right-5 bottom-10 group"
+    class="back-btn btn btn-lg border-none fixed right-5 bottom-10 group"
   >
     <img
       src="@/assets/go-back.svg"
@@ -98,11 +95,21 @@ const randomRule = () => {
 </template>
 
 <style scoped>
-.btn {
+.spin-btn {
+  color: var(--color-primary);
+  background-color: white;
+}
+
+.spin-btn:hover {
+  color: white;
   background-color: var(--color-primary);
 }
 
-.btn:hover {
+.back-btn {
+  background-color: var(--color-primary);
+}
+
+.back-btn:hover {
   background-color: white;
 }
 </style>
