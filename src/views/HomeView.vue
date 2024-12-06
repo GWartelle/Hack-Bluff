@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="flex flex-col gap-10 md:gap-16 mt-32">
+  <div class="flex flex-col gap-10 md:gap-16 my-32">
     <div class="font-semibold italic text-white">
       <p>A single clue can reveal everything...</p>
       <p>...or hide everything</p>
