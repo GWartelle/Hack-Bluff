@@ -70,7 +70,7 @@ const randomRule = () => {
 
 <template>
   <button
-    class="btn btn-lg mt-10 text-white hover:text-black"
+    class="btn btn-lg mt-10 border-none text-white hover:text-black"
     @click="randomRule"
   >
     Spin the wheel!
@@ -85,7 +85,10 @@ const randomRule = () => {
   />
 
   <!-- Back home button -->
-  <RouterLink to="/" class="btn btn-lg fixed right-5 bottom-10 group">
+  <RouterLink
+    to="/"
+    class="btn btn-lg border-none fixed right-5 bottom-10 group"
+  >
     <img
       src="@/assets/go-back.svg"
       alt="Go back arrow"

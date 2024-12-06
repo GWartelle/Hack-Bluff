@@ -48,13 +48,13 @@
         <p>The Hacker: He has a slightly different, but related word.</p>
       </span>
       <p>The objectives differ based on the role:</p>
-      <div class="flex items-start gap-8">
+      <div class="flex items-center gap-8">
         <img
           src="@/assets/return-vector.svg"
           alt="return vector"
           width="40px"
         />
-        <ul>
+        <ul class="flex flex-col gap-1">
           <li>Gamers must identify and eliminate the hacker.</li>
           <li>
             The Hacker must blend in with the gamers and avoid being discovered.
@@ -285,7 +285,10 @@
   </div>
 
   <!-- Back home button -->
-  <RouterLink to="/" class="btn btn-lg fixed right-5 bottom-10 group">
+  <RouterLink
+    to="/"
+    class="btn btn-lg border-none fixed right-5 bottom-10 group"
+  >
     <img
       src="@/assets/go-back.svg"
       alt="Go back arrow"
