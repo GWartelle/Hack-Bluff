@@ -1,6 +1,4 @@
-<script setup>
-import { RouterLink } from "vue-router";
-</script>
+<script setup></script>
 
 <template>
   <div class="flex flex-col gap-20 mt-32">

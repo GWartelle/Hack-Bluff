@@ -5,13 +5,15 @@ import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <div
-    class="bg-[url('@/assets/background.png')] flex flex-col min-h-screen align-center text-center m-0"
-  >
-    <Header />
-    <main class="flex-grow">
-      <RouterView />
-    </main>
-    <Footer />
+  <div class="bg-neutral-900">
+    <div
+      class="bg-[url('@/assets/background.png')] bg-no-repeat bg-bottom flex flex-col min-h-screen items-center text-center m-0"
+    >
+      <Header />
+      <main class="flex-grow">
+        <RouterView />
+      </main>
+      <Footer />
+    </div>
   </div>
 </template>

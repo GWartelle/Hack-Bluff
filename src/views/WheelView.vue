@@ -64,18 +64,12 @@ const randomRule = () => {
 </script>
 
 <template>
-  <div class="flex justify-center gap-10 mt-10">
-    <button class="btn btn-lg text-white hover:text-black" @click="randomRule">
-      Spin the wheel!
-    </button>
-    <RouterLink to="/" class="btn btn-lg group">
-      <img
-        src="@/assets/go-back.svg"
-        alt="Go back arrow"
-        class="w-6 h-6 transition duration-300 ease-in-out group-hover:invert"
-      />
-    </RouterLink>
-  </div>
+  <button
+    class="btn btn-lg mt-10 text-white hover:text-black"
+    @click="randomRule"
+  >
+    Spin the wheel!
+  </button>
   <FortuneWheel
     ref="wheel"
     v-model="rule"
@@ -84,11 +78,20 @@ const randomRule = () => {
     :data="data"
     @done="done"
   />
+
+  <!-- Back home button -->
+  <RouterLink to="/" class="btn btn-lg fixed right-5 bottom-10 group">
+    <img
+      src="@/assets/go-back.svg"
+      alt="Go back arrow"
+      class="w-6 h-6 transition duration-300 ease-in-out group-hover:invert"
+    />
+  </RouterLink>
 </template>
 
 <style scoped>
 .btn {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 
 .btn:hover {
