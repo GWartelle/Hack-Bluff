@@ -2,7 +2,7 @@
 
 <template>
   <div
-    class="relative flex flex-col text-left text-white bg-neutral-900 p-10 m-10 border-1 border border-white shadow-2xl rounded-3xl min-h-screen max-w-4xl"
+    class="relative flex flex-col text-left text-white bg-neutral-900 p-8 md:p-10 my-10 mx-5 md:mx-10 border-1 border border-white shadow-2xl rounded-3xl min-h-screen max-w-4xl"
   >
     <!-- Header -->
     <header

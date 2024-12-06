@@ -1,7 +1,11 @@
 <script setup></script>
 
 <template>
-  <div class="flex flex-col gap-20 mt-32">
+  <div class="flex flex-col gap-10 md:gap-16 mt-32">
+    <div class="font-semibold italic text-white">
+      <p>A single clue can reveal everything...</p>
+      <p>...or hide everything</p>
+    </div>
     <RouterLink to="/wheel">
       <button class="btn btn-lg text-3xl w-60 h-24 border-none">
         The Wheel

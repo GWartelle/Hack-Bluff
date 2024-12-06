@@ -7,36 +7,41 @@ import logoImage from "@/assets/primary-logo.svg";
 const rule = ref(2);
 const wheel = ref<InstanceType<typeof FortuneWheel> | null>(null);
 const data = ref<Data[]>([
-  { id: 1, value: "Say 2 words", bgColor: "#506efa", color: "#fff" },
   {
-    id: 2,
-    value: "Use two-syllable words",
-    bgColor: "#fff",
-    color: "var(--color-primary)",
-  },
-  {
-    id: 3,
-    value: "Speak in a whisper",
+    id: 1,
+    value: "Sing the word",
     bgColor: "var(--color-primary)",
     color: "#fff",
   },
   {
-    id: 4,
-    value: "Use an accent",
+    id: 2,
+    value: "Speak fast",
+    bgColor: "var(--color-accent)",
+    color: "#fff",
+  },
+  {
+    id: 3,
+    value: "Whisper the word",
     bgColor: "#fff",
-    color: "var(--color-primary)",
+    color: "var(--color-accent)",
+  },
+  {
+    id: 4,
+    value: "Speak drunk",
+    bgColor: "var(--color-primary)",
+    color: "#fff",
   },
   {
     id: 5,
-    value: "Use only verbs",
-    bgColor: "var(--color-primary)",
+    value: "Use an accent",
+    bgColor: "var(--color-accent)",
     color: "#fff",
   },
   {
     id: 6,
-    value: "Sing the word",
+    value: "Speak slowly",
     bgColor: "#fff",
-    color: "var(--color-primary)",
+    color: "var(--color-accent)",
   },
 ]);
 
